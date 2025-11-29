@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "yourdockerhubusername/product-catalog"
+        IMAGE_NAME = "manugowda1998"
         APP_PORT = "8088"
     }
 
@@ -10,7 +10,7 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                git url: 'https://github.com/yourusername/yourrepo.git',
+                git url: 'https://github.com/gowdamanu12/ultimate-devops-project-demo.git',
                     branch: 'main'
             }
         }
